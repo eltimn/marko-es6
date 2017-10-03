@@ -1,0 +1,6 @@
+<ul if(input.items)>
+  <li for(item in input.items)>
+    ${item.name}
+    <tree items=item.subitems />
+  </li>
+</ul>
