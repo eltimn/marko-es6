@@ -11,7 +11,7 @@ export default {
   output: {
     file: 'build/bundle.js',
     format: 'iife',
-    moduleName: 'app'
+    name: 'app'
   },
   plugins: [
     browserify(markoify),

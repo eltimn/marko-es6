@@ -2,8 +2,9 @@ import app from '../../app'
 
 export default class {
   onCreate() {
+    this.day = 'Tuesday'
     this.state = {
-      name: app.user.name,
+      page: 'home',
       items: [{
         name:'vehicles',
         subitems:[{
@@ -32,5 +33,9 @@ export default class {
 
   onMount() {
     app.emit('test-event')
+  }
+
+  msg() {
+    return 'Hi'
   }
 }

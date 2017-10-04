@@ -1,5 +1,5 @@
 {
-  "name": "marko-mixed",
+  "name": "marko-es6",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,11 +9,12 @@
     "build:rollup": "rollup --config",
     "start:rollup": "npm run build:rollup && node server.js"
   },
-  "author": "",
-  "license": "UNLICENSED",
+  "author": "Tim Nelson",
+  "license": "MIT License",
   "devDependencies": {
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",
+    "babel-plugin-add-module-exports": "0.2.1",
     "babel-preset-env": "1.6.0",
     "babel-runtime": "6.26.0",
     "envify": "4.1.0",

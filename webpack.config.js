@@ -10,13 +10,13 @@ module.exports = {
   entry: "./src/app.js",
   output: {
     path: __dirname,
-    filename: "static/bundle.js",
+    filename: "build/bundle.js",
     library: "app",
     libraryTarget: "window"
   },
   resolve: {
     extensions: ['.js', '.marko'],
-    modules: ['src', 'node_modules']
+    modules: ['./', 'node_modules']
   },
   module: {
     loaders: [
